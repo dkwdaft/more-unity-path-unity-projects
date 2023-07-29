@@ -289,6 +289,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -363,13 +365,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018434355, y: -0.9054452, z: 0.039532606, w: 0.422216}
-  m_LocalPosition: {x: 11, y: 7, z: 9}
+  m_LocalRotation: {x: 0.14701577, y: 0.6916548, z: -0.14701577, w: 0.6916548}
+  m_LocalPosition: {x: -2.5, y: 7, z: -7.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 5, y: -130, z: 0}
+  m_LocalEulerAnglesHint: {x: 24, y: 90, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35172aeb807a84c31bcc5bc256327e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1836737589}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d628810e656428dad6d2bd20f01897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1836737589}
+  sensitivity: 5
 --- !u!1001 &1726374870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,6 +579,7 @@ GameObject:
   - component: {fileID: 1836737591}
   - component: {fileID: 1836737590}
   - component: {fileID: 1836737594}
+  - component: {fileID: 1836737595}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -670,6 +700,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1836737595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836737589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa01833ec1a6341869903257dc268049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 963194228}
+  rightKey: right
+  leftKey: left
 --- !u!1001 &1839156185
 PrefabInstance:
   m_ObjectHideFlags: 0
