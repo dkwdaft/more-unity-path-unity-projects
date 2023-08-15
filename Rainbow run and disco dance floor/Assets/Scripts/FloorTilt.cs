@@ -41,7 +41,7 @@ public class FloorTilt : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.Euler(targetXRotation, 0, targetZRotation);
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
-
+      //  transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
+      transform.rotation = Quaternion.Lerp(transform.rotation, Input.gyro.attitude, turnSpeed * Time.deltaTime);
     }
 }
