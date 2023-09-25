@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
@@ -10,6 +11,6 @@ public class Reset : MonoBehaviour
 
     private void Awake()
     {
-        resetButton.onClick.AddListener(() => Application.LoadLevel(Application.loadedLevel));
+        resetButton.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex));
     }
 }
