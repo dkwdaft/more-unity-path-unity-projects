@@ -9,8 +9,16 @@ public class Reset : MonoBehaviour
 {
     [SerializeField] private Button resetButton;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
     private void Awake()
     {
-        resetButton.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex));
+        resetButton.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().name));
     }
 }
