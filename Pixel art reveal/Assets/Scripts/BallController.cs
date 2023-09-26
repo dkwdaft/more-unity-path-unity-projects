@@ -26,7 +26,7 @@ public class BallController : MonoBehaviour
         Vector3 left = -right;
         Vector3 backward = -forward;
 
-        if (Input.GetKey(rightKey))
+        if (Input.GetKey(rightKey) )
         {
             rb.AddForce(right * 5f);
         }
@@ -44,6 +44,11 @@ public class BallController : MonoBehaviour
         if (Input.GetKey(downKey))
         {
             rb.AddForce(backward * 2f);
+        }
+
+        if (this.transform.position.y < -10)
+        {
+            this.transform.position = new Vector3(0, 1, 0);
         }
     }
 }
