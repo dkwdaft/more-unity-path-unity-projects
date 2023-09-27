@@ -48,7 +48,9 @@ public class BallController : MonoBehaviour
 
         if (this.transform.position.y < -10)
         {
+            rb.velocity = Vector3.zero;
             this.transform.position = new Vector3(0, 1, 0);
+            rb.velocity = Vector3.zero;
         }
     }
 }
