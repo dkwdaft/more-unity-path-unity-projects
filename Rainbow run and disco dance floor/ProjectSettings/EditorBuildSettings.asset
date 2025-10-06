@@ -4,8 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Rainbow run.unity
-    guid: 62205f9f105c24fcabcb62a6738deed1
+  m_Scenes: []
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

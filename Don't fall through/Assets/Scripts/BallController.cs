@@ -50,7 +50,7 @@ public class BallController : MonoBehaviour
 
         if (this.transform.position.y < -10)
         {
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
             transform.position = spawnPoint;
         }
     }

@@ -16,7 +16,7 @@ public class Reset : MonoBehaviour
 
     public void resetBall()
     {
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         transform.position = spawnPoint;
     }
 }
